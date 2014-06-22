@@ -36,14 +36,14 @@ The script executes the following:
     	iii. Reads the X_test.txt file - contains the test data set
     7. Combines the test data loaded in step 6 into one tidy data set.
     8. Combines training and test data to create one data set.
-    9. Extracts only the measurements on the mean and standard deviation for each measurement
+    9. Extracts only the measurements on the mean and standard deviation for each measurement:
     	i. Select columns with "[Mm]ean" or "std" in their colnames (and retain actID and subjectID) 
     	ii. This should return 86 measurement variables as columns
-    10. Use descriptive activity names to name the activities in the data set
+    10. Use descriptive activity names to name the activities in the data set:
     	i. Reads the activity_labels.txt file - contains the descriptive labels for each activity type
     	ii. Merges the actLabels data.frame to provide descriptive activities for all records
     	iii. NB This should be done after concatenating all other data, as merge() reorders the data.
-    	iv. Remove unnecessary actID column
+    	iv. Removes unnecessary actID column
     11. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
     	i. To avoid looping through all of the measurement columns, let's melt all of the columns into a variable/value pair
     	ii. Uses plyr to calculate means for each of the measurement variables by activity and subject
