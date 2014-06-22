@@ -22,7 +22,7 @@ reading this readme, however a plain english description follows, as per the ass
 
 The script executes the following:
 
-    1. Prompt user for long or wide data set output type
+    1. Prompts the user for long or wide data set output type
     2. Read the features.txt file - this will provide the descriptive colnames for measurement variables
     3. Remove parentheses and comma characters prior to assigning to the tidy data.frame colnames
     4. Loads the training data set:
